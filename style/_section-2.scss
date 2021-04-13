@@ -1,0 +1,97 @@
+.section-2{
+
+    &-header{
+        width: 60%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+
+            color: $dark-blue;
+            font-size: 2.5rem;
+            font-weight: none;
+
+        }
+
+        p{
+            text-align: center;
+            color: $grey;
+            line-height: 1.5;
+            padding: 6vmin;
+        }
+
+        .section-2-buttons{
+
+            button{
+                background-color: white;
+                padding: 3.5vh 2.5vw;
+                font-size: 1rem;
+                border: none;
+                border-bottom: 3px solid grey;
+
+                &:hover{
+                    font-weight: bold;
+                }
+
+                &:focus{
+                    border-bottom: 7.5px solid red;
+                }
+            }
+        }
+    }
+
+    .features{
+        display: none;
+        margin-top: 50px;
+        
+        .feature-image{
+            width: 50%;
+        }
+
+        .feature{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            padding: 10vmin;
+
+            p{
+                margin: 10px 0;
+                color: $grey;
+                line-height: 1.5;
+            }
+
+            button{
+                @extend %more-info;
+            }
+        }
+    }
+
+    .active-feature{
+        margin-left: -2000px;
+        display: flex;
+        animation-name: new-feature;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes new-feature{
+        100%{margin-left: 0px;}
+    }
+
+    .old-feature{
+        margin-left: 0px;
+        animation-name: old-feature;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes old-feature{
+        100%{margin-right: -2000px; margin-left: 2000px}
+    }
+
+
+}

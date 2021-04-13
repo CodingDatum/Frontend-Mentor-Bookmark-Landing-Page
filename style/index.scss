@@ -1,0 +1,71 @@
+@import 'utilities';
+@import 'modules';
+@import 'navbar';
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    transition: 0.5s linear all;
+}
+
+h3{
+    color: $dark-blue;
+    font-size: 2rem;
+}
+
+body{
+    font-family: $font;
+    font-size: 18px;
+
+    overflow-x: hidden;
+
+    width: 100vw;
+
+    #bg-1{
+        height: 60vh;
+
+        position: absolute;
+        right: 0;
+        top: 30vh;
+    
+        width: 40vw;
+    
+        background-color: $soft-blue;
+        border-radius: 100% 0 0 100%;
+    
+    }
+
+    #bg-2{
+        position: absolute;
+        left: 0;
+        top: 160vh;
+        height: 50vh;
+        width: 40vw;
+        background-color: $soft-blue;
+        border-radius: 0 100% 100% 0;
+        z-index: -1;
+    }
+}
+
+.container{
+    padding: 7.5vh 10vw;
+    width: 100%;
+
+    section{
+        padding: 10vh 0;
+    }
+
+    @import 'section-1';
+    @import 'section-2';
+    @import 'section-3';
+    @import 'section-4';
+}
+
+@import 'section-5';
+
+@import 'section-6';
+
+@import 'media-queries';

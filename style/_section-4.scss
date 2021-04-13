@@ -1,0 +1,78 @@
+.section-4{
+
+    &-header{
+
+        @extend %section-header;
+
+    }
+
+    &-content{
+
+        margin-top: 50px;
+
+        .accordian-tab{
+
+            width: 50%;
+            margin: 0px auto;
+            border-top: 1px solid $grey;
+
+            cursor: pointer;
+
+            .accordian-header{
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                padding: 20px 0px;
+
+                h5{
+                    color: $dark-blue;
+                    font-size: 1.3rem;
+                }
+
+                .active-arrow{
+                    transform: rotate(180deg);
+                    fill: $soft-red;
+                }
+            }
+
+            p{
+                display: none;
+
+                color: $grey;
+                line-height: 2;
+                padding-bottom: 20px;
+
+            }
+
+            .accordian-body{
+
+                display: block;
+
+            }
+        }
+
+        .accordian-tab:hover h5{
+
+            color: $soft-red;
+
+        }
+
+        .accordian-tab:last-child{
+
+            border-bottom: 1px solid $grey;
+            margin-bottom: 50px;
+
+        }
+
+    }
+
+    button{
+
+        @extend %more-info;
+        margin-left: 45%;
+
+    }
+
+}

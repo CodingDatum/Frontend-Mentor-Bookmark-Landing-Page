@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <!-- FONT AWESOME LINKS -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- MY PERSONAL STYLE SHEET -->
+
+  <link rel="stylesheet" href="style/css/index.css">
+
+</head>
+<body>
+
+  <div id="bg-1"></div>
+  <div id="bg-2"></div>
+
+  <div class="container">
+
+    <nav>
+
+      <img src="style/css/images/logo-bookmark.svg" alt="Bookmark logo">
+
+      <ul>
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#" id="login">LOGIN</a></li>
+      </ul>
+
+    </nav>
+
+    <section class="section-1">
+
+      <div class="content">
+
+        <h1 id="main-header">A Simple Bookmark Manager</h1>
+        <p>
+          A clean and simple interface to organize your favorite websites.
+          Open a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+
+        <div class="section-1-buttons">
+          <button>Get it on Chrome</button>
+          <button>Get it on Firefox</button>
+        </div>
+
+      </div>
+
+      <div class="bg-image">
+
+      </div>
+
+    </section>
+
+    <section class="section-2">
+
+      <div class="section-2-header">
+
+        <h2>Features</h2>
+
+        <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.</p>
+
+          <div class="section-2-buttons">
+
+            <button class="feature-button" onclick="newFeature(features[0])">Simple Bookmarking</button>
+            <button class="feature-button" onclick="newFeature(features[1])">Speedy Searching</button>
+            <button class="feature-button" onclick="newFeature(features[2])">Easy Sharing</button>
+
+          </div>
+
+
+      </div>
+
+      <div class="section-2-content">
+
+        <div id="feature-1" class="features">
+
+          <div class="feature-image"><img src="style/css/images/illustration-features-tab-1.svg" alt="computer"></div>
+
+          <div class="feature">
+
+            <h3>Bookmark in one click</h3>
+
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+              gives you complete control over how you manage your favourite sites.</p>
+
+            <button>More Info</button>
+
+          </div>
+
+        </div>
+
+        <div id="feature-2" class="features">
+
+          <div class="feature-image"><img src="style/css/images/illustration-features-tab-2.svg" alt=""></div>
+
+          <div class="feature">
+
+            <h3>Intelligent search</h3>
+
+            <p>Our powerful search feature will help you find saved sites in no time at all. 
+              No need to trawl through all of your bookmarks.</p>
+
+            <button>More Info</button>
+            
+          </div>
+
+        </div>
+
+        <div id="feature-3" class="features">
+
+          <div class="feature-image"><img src="style/css/images/illustration-features-tab-3.svg" alt=""></div>
+
+          <div class="feature">
+
+            <h3>Share your bookmarks</h3>
+
+            <p>Easily share your bookmarks and collections with others. Create a shareable 
+              link that you can send at the click of a button.</p>
+
+            <button>More Info</button>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section-3">
+
+      <div class="section-3-header">
+
+        <h3>Download the extension</h3>
+
+        <p>Weve got more browsers in the pipeline. Please let us know if you've got a favorite you'd like us to prioritize</p>
+
+      </div>
+
+      <div class="section-3-content">
+
+        <div class="card">
+
+          <img src="style/css/images/logo-chrome.svg" alt="Google Chrome Logo">
+
+          <h4>Add to Chrome</h4>
+
+          <p>Minimum version 62</p>
+
+          <hr>
+
+          <button class="extension">Add and Install Extension</button>
+
+        </div>
+
+        <div class="card">
+
+          <img src="style/css/images/logo-firefox.svg" alt="FireFox Logo">
+
+          <h4>Add to Chrome</h4>
+
+          <p>Minimum version 55</p>
+
+          <hr>
+
+          <button class="extension">Add and Install Extension</button>
+
+        </div>
+
+        <div class="card">
+
+          <img src="style/css/images/logo-opera.svg" alt="Opera Logo">
+
+          <h4>Add to Chrome</h4>
+
+          <p>Minimum version 46</p>
+
+          <hr>
+
+          <button class="extension">Add and Install Extension</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section-4">
+
+      <div class="section-4-header">
+
+        <h3>Frequently Asked Questions</h3>
+
+        <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to e-mail us.</p>
+
+      </div>
+
+      <div class="section-4-content">
+
+        <div class="accordian-tab">
+
+          <div class="accordian-header">
+
+            <h5>What is Bookmark?</h5>
+
+            <img class="arrow" src="style/css/images/icon-arrow.svg" alt="An arrow to indicate an open accordian tab">
+
+          </div>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+
+        </div>
+
+        <div class="accordian-tab">
+
+          <div class="accordian-header">
+
+            <h5>How can I request a new browser?</h5>
+
+            <img class="arrow" src="style/css/images/icon-arrow.svg" alt="An arrow to indicate an open accordian tab">
+
+          </div>
+
+          <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+
+        </div>
+
+        <div class="accordian-tab">
+
+          <div class="accordian-header">
+
+            <h5>Is there a mobile app?</h5>
+
+            <img class="arrow" src="style/css/images/icon-arrow.svg" alt="An arrow to indicate an open accordian tab">
+
+          </div>
+
+          <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+            sollicitudin ex et ultricies bibendum.</p>
+
+        </div>
+
+        <div class="accordian-tab">
+
+          <div class="accordian-header">
+
+            <h5>What about other Chromium browsers?</h5>
+
+            <img class="arrow" src="style/css/images/icon-arrow.svg" alt="An arrow to indicate an open accordian tab">
+
+          </div>
+
+          <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+            vitae neque eget nisl gravida pellentesque non ut velit.</p>
+
+        </div>
+
+      </div>
+
+      <button>More Info</button>
+
+    </section>
+
+  </div>  
+
+  <section class="section-5">
+
+      <p>35,000 + ALREADY JOINED</p>
+
+      <h3>Stay up-to-date with what we're doing</h3>
+
+      <form action="#" method="post">
+
+        <div class="form-container">
+
+          <input type="email" id="email-input" name="email" size="30" required>
+
+          <label for="email-input">Enter a valid e-mail</label>
+
+          <input id="email-submit-button" type="submit" value="Contact Us">
+
+        </div>
+
+      </form>
+
+  </section>
+
+  <section class="section-6">
+
+    <div class="footer-nav">
+
+      <h3>BOOKMARK</h3>
+
+      <ul>
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+
+    </div>
+
+    <div class="social-media-links">
+
+      <a href="#"> <img src="style/css/images/icon-facebook.svg" alt="facebook logo as a link"> </a>
+      <a href="#"> <img src="style/css/images/icon-twitter.svg" alt="twitter logo as a link"> </a>
+
+    </div>
+
+  </section>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Matthew Cain 2021</a>.
+    </p>
+
+    <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+<!--  -->
+<!--  -->

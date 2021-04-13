@@ -1,0 +1,36 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    ul{
+        list-style: none;
+        display: flex;
+
+        li{
+
+            margin-left: 5vw;
+            a{
+                text-decoration: none;
+                color: black;
+                letter-spacing: 2px;
+            }
+
+            a:hover{
+                color: $soft-red
+            }
+
+            a#login{
+                @extend %basic-button;
+                border: 3px solid $soft-red;
+                color: white;
+                background-color: $soft-red;
+                &:hover{
+
+                    background-color: white;
+                    color: $soft-red;
+
+                }
+            }
+        }
+    }
+}
